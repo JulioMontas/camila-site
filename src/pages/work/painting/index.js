@@ -23,7 +23,7 @@ const PaintingPage = () => {
 
       <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
         <StaticImage
-          src="../images/IMG_2084.jpg"
+          src="../../../images/IMG_2084.jpg"
           alt="A dinosaur"
           placeholder="blurred"
           layout="fullWidth"
@@ -33,12 +33,13 @@ const PaintingPage = () => {
         />
 
         <StaticImage
-          src="../images/IMG_2257.JPG"
+          src="../../../images/IMG_2257.JPG"
           alt="A dinosaur"
           placeholder="blurred"
           layout="fullWidth"
           width={3842}
           height={2401}
+          aspectRatio={16/9}
         />
       </div>
     </Container>

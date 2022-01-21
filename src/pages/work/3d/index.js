@@ -27,50 +27,45 @@ const ThreeDPage = () => {
         src="../../../images/DSC05078.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fullWidth"
+        layout="constrained"
         width={1758}
         height={989}
-        aspectRatio={16/9}
       />
 
       <StaticImage
         src="../../../images/DSC05052.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fullWidth"
+        layout="constrained"
         width={1758}
         height={989}
-        aspectRatio={16/9}
       />
 
       <StaticImage
         src="../../../images/DSC05057.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fullWidth"
+        layout="constrained"
         width={1078}
         height={739}
-        aspectRatio={16/9}
       />
 
       <StaticImage
         src="../../../images/VillaZertuche_Camila_02.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fullWidth"
+        layout="constrained"
         width={1889}
         height={1063}
-        aspectRatio={16/9}
       />
 
       <StaticImage
         src="../../../images/VillaZertuche_Camila_06.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fullWidth"
+        layout="constrained"
         width={1828}
         height={1028}
-        aspectRatio={16/9}
       />
       </div>
 
