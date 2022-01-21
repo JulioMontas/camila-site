@@ -24,7 +24,7 @@ const ThreeDPage = () => {
       <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
 
       <StaticImage
-        src="../../../images/DSC05078.jpg"
+        src="../../../images/DSC05078.JPG"
         alt="A dinosaur"
         placeholder="blurred"
         layout="constrained"
@@ -33,7 +33,7 @@ const ThreeDPage = () => {
       />
 
       <StaticImage
-        src="../../../images/DSC05052.jpg"
+        src="../../../images/DSC05052.JPG"
         alt="A dinosaur"
         placeholder="blurred"
         layout="constrained"
@@ -42,7 +42,7 @@ const ThreeDPage = () => {
       />
 
       <StaticImage
-        src="../../../images/DSC05057.jpg"
+        src="../../../images/DSC05057.JPG"
         alt="A dinosaur"
         placeholder="blurred"
         layout="constrained"
@@ -51,7 +51,7 @@ const ThreeDPage = () => {
       />
 
       <StaticImage
-        src="../../../images/VillaZertuche_Camila_02.jpg"
+        src="../../../images/VillaZertuche_Camila_02.JPG"
         alt="A dinosaur"
         placeholder="blurred"
         layout="constrained"
@@ -60,7 +60,7 @@ const ThreeDPage = () => {
       />
 
       <StaticImage
-        src="../../../images/VillaZertuche_Camila_06.jpg"
+        src="../../../images/VillaZertuche_Camila_06.JPG"
         alt="A dinosaur"
         placeholder="blurred"
         layout="constrained"
