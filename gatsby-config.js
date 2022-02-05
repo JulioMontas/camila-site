@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
       title: `Camila Villa Zertuche`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://camila.gatsbyjs.io/`,
     description: `Blazing fast modern site generator for React`,
   },
   plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {

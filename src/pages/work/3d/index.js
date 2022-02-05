@@ -1,11 +1,11 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link,graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Container from "../../../components/container";
 import Header from "../../../components/header";
 
 // markup
-const ThreeDPage = () => {
+const ThreeDPage = ({data}) => {
   return (
     <Container>
       <title>3D</title>
@@ -20,57 +20,40 @@ const ThreeDPage = () => {
           </li>
         </ul>
       </div>
-
-      <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
-
-      <StaticImage
-        src="../../../images/DSC05078.JPG"
-        alt="A dinosaur"
-        placeholder="blurred"
-        layout="constrained"
-        width={1758}
-        height={989}
-      />
-
-      <StaticImage
-        src="../../../images/DSC05052.JPG"
-        alt="A dinosaur"
-        placeholder="blurred"
-        layout="constrained"
-        width={1758}
-        height={989}
-      />
-
-      <StaticImage
-        src="../../../images/DSC05057.JPG"
-        alt="A dinosaur"
-        placeholder="blurred"
-        layout="constrained"
-        width={1078}
-        height={739}
-      />
-
-      <StaticImage
-        src="../../../images/VillaZertuche_Camila_02.JPG"
-        alt="A dinosaur"
-        placeholder="blurred"
-        layout="constrained"
-        width={1889}
-        height={1063}
-      />
-
-      <StaticImage
-        src="../../../images/VillaZertuche_Camila_06.JPG"
-        alt="A dinosaur"
-        placeholder="blurred"
-        layout="constrained"
-        width={1828}
-        height={1028}
-      />
+      <div class="grid gap-4 grid-cols-1 md:grid-cols-1">
+        {data.slideShow.edges.map(({node}) => (
+          <p key={node.ide}>
+            <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base} />
+          </p>
+        ))}
       </div>
-
     </Container>
   )
 }
 
 export default ThreeDPage
+
+export const pageQuery = graphql`
+  query {
+    slideShow: allFile(
+      filter: {relativeDirectory: {eq: "3d"}}
+      sort: {fields: base, order: ASC}
+    ) {
+      edges {
+        node {
+          id
+          base
+          childImageSharp {
+            gatsbyImageData(
+              aspectRatio: 1.1
+              placeholder: BLURRED
+              quality: 70
+              blurredOptions: {width: 100}
+              layout: CONSTRAINED
+            )
+          }
+        }
+      }
+    }
+  }
+`
