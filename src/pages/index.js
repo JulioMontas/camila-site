@@ -1,22 +1,19 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Container from "../components/container";
-import Header from "../components/header";
+import Layout from "../components/layout";
+import Seo from "../components/seo"
 
-
-// markup
 const IndexPage = ({data}) => {
   return (
-    <Container>
-    <title>Home Page</title>
-    <Header />
+    <Layout>
+    <Seo title="Home" />
       {data.slideShow.edges.map(({node}) => (
         <div key={node.ide}>
           <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base} />
         </div>
       ))}
-    </Container>
+    </Layout>
   )
 }
 

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
       title: `Camila Villa Zertuche`,
+      author: `Camila Villa Zertuche`,
     siteUrl: `https://camila.gatsbyjs.io/`,
     description: `Blazing fast modern site generator for React`,
   },
