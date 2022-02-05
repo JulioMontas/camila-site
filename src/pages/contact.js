@@ -12,19 +12,16 @@ const ContactPage = () => {
           <h2>Contact Me</h2>
           <p><b>Instagram:</b></p>
         </div>
+
         <div>
-        <form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+            <label>Email<input type="email" name="email" /></label>
+            <label>Name<input type="text" name="name" /></label>
+            <label>Message<input type="text" name="message" /></label>
+            <button type="submit">Send</button>
+          </form>
         </div>
+
       </Container>
     </Layout>
   )
