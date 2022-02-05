@@ -14,7 +14,7 @@ const ContactPage = () => {
         </div>
 
         <div>
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          <form method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
             <label>Email<input type="email" name="email" /></label>
             <label>Name<input type="text" name="name" /></label>
             <label>Message<input type="text" name="message" /></label>
