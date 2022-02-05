@@ -89,7 +89,7 @@ const PaintingPage = () => {
 
       <div class="grid gap-10 grid-cols-1 mb-20 md:grid-cols-2">
         <StaticImage
-          src="../../../images/painting/06-las-hemanitas-azul.jpg"
+          src="../../../images/painting/06-las-hemanitas-azul.JPG"
           alt="Las Hemanitas (Azul)"
           placeholder="blurred"
           layout="CONSTRAINED"
@@ -119,7 +119,7 @@ const PaintingPage = () => {
 
       <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
         <StaticImage
-          src="../../../images/painting/08-lagartija-azul.jpg"
+          src="../../../images/painting/08-lagartija-azul.JPG"
           alt="Lagartija Azul"
           placeholder="blurred"
           layout="CONSTRAINED"
