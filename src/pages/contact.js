@@ -14,7 +14,7 @@ const ContactPage = () => {
         </div>
 
         <div>
-          <form method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+          <form method="post" name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="text" name="name" placeholder="Your Name" />
             <input type="email" name="email" placeholder="name@name.com" />
             <textarea type="text" name="message" />
