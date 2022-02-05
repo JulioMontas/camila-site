@@ -1,5 +1,4 @@
 import * as React from "react"
-import Container from "./container";
 import { Link } from "gatsby"
 
 const WorkNav = () => (
