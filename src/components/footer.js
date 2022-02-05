@@ -3,7 +3,9 @@ import Container from "./container";
 
 const Footer = () => (
   <Container>
-    Footer
+    <p class="pb-10 pt-10">
+       © {new Date().getFullYear()} Camila Villa Zertuche. All Rights Reserved.
+    </p>   
   </Container>
 )
 

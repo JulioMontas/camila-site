@@ -8,7 +8,10 @@ const ContactPage = () => {
     <Layout>
       <Seo title="Contact Me" />
       <Container>
-        <h2>Contact Me</h2>
+        <div>
+          <h2>Contact Me</h2>
+          <p><b>Instagram:</b></p>
+        </div>
       </Container>
     </Layout>
   )

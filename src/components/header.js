@@ -6,9 +6,10 @@ import Container from "./container";
 const Header = ({ siteTitle }) => (
     <div>
     <Container>
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between mb-6 mt-6">
+
       <div>
-        <h1 class="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
+        <h1 class="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight">
           <Link to="/" className="hover:underline">
             Camila Villa Zertuche
           </Link>
@@ -21,13 +22,14 @@ const Header = ({ siteTitle }) => (
             <Link class="text-blue-500 hover:text-blue-800" to="/aboutme">About Me</Link>
           </li>
           <li class="mr-6">
-            <Link class="text-blue-500 hover:text-blue-800" to="/work">Work</Link>
+            <Link class="text-blue-500 hover:text-blue-800" to="/work/painting">Work</Link>
           </li>
           <li class="mr-6">
             <Link class="text-blue-500 hover:text-blue-800" to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
+
       </div>
       </Container>
     </div>
