@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Container from "./container";
 
 const Header = ({ siteTitle }) => (
-    <div>
+    <div class="fixed z-50 w-full">
     <Container>
       <div class="flex items-center justify-between mb-6 mt-6">
 
