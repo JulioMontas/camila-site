@@ -15,17 +15,17 @@ const ContactPage = () => {
         <form
           name="contact-meeee"
           method="POST"
-          data-netlify-recaptcha="true"
+          data-netlify-recaptcha="false"
           data-netlify="true"
         >
           <p>
             <label>
-              Email: <input type="text" name="name" />
+              E-mail <input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
-              Message: <textarea name="message"></textarea>
+              Message <textarea name="message"></textarea>
             </label>
           </p>
           <div data-netlify-recaptcha="true"></div>
